@@ -1,7 +1,7 @@
 // Import react
 import React from 'react'
 // Import react-bootstrap components
-import { Offcanvas, Button } from 'react-bootstrap'
+import { Offcanvas } from 'react-bootstrap'
 // Import CSS
 import '../css/helpSidebar.css'
 

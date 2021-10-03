@@ -32,7 +32,7 @@ const FinishModal = ({showFinishModal, handleRestart, moves, bestScore}) => {
                </p>
             </Modal.Body>
             <Modal.Footer>
-               <Button variant="secondary" onClick={handleRestart}>Restart</Button>
+               <Button variant="secondary" onClick={handleRestart}>Play Again?</Button>
             </Modal.Footer>
          </Modal>
    )

@@ -1,8 +1,7 @@
 // Import from react
 import { useEffect, useState, useRef } from "react";
-// Import from react-bootstrap
-import { Button } from 'react-bootstrap'
 // Import components
+import Header from "./Header";
 import Card from "./Card";
 import FinishModal from "./FinishModal";
 // Import CSS
@@ -14,7 +13,6 @@ import Cherries from '../images/Cherries.gif';
 import Kiwi from '../images/Kiwi.png';
 import Pineapple from '../images/Pineapple.gif';
 import Strawberry from '../images/Strawberry.png';
-import Header from "./Header";
 
 // Card deck
 const uniqueCardsArray = [{
