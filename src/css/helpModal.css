@@ -1,0 +1,16 @@
+* {
+   font-size: 20px;
+}
+
+.offcanvas-header {
+   background-color: #DEDEDE;
+   padding: 15px 20px;
+}
+
+.offcanvas-title {
+   font-size: 28px;
+}
+
+ul li {
+   margin: 10px 0;
+}

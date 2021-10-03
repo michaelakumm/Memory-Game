@@ -1,0 +1,45 @@
+.card {
+   border: 0.5px solid lightgrey;
+   background-color: #f0f0f0;
+   transition: 0.7s;
+   transform-style: preserve-3d;
+   position: relative;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card,
+.card img {
+   width: 100%;
+   height: 100%;
+   border-radius: 15px;
+}
+
+.card-face {
+   backface-visibility: hidden;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-back-face img {
+   width: 55%;
+   height: auto;
+}
+
+.card-face.card-back-face {
+   transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+   transform: rotateY(180deg);
+}
+
+.card.is-inactive {
+   opacity: 0;
+}

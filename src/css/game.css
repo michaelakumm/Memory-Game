@@ -1,0 +1,25 @@
+.game {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #DEDEDE;
+}
+
+.game .container {
+   border: 1px solid #DEDEDE;
+   background-color: white;
+   border-radius: 15px;
+   padding: 20px;
+   box-shadow: 0 0 5px 5px #DEDEDE;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   justify-items: center;
+   align-items: center;
+   gap: 15px;
+   margin: 15px auto;
+   width: 950px;
+   max-width: 1000px;
+   height: 450px;
+   max-height: 550px;
+}

@@ -1,0 +1,32 @@
+* {
+   font-size: 20px;
+}
+
+.modal-header,
+.modal-footer {
+   justify-content: center;
+}
+
+.modal-title {
+   font-size: 30px;
+}
+
+.modal-title img {
+   width: 70px;
+}
+
+.party-popper-left {
+   transform: scaleX(-1);
+}
+
+.modal-body {
+   text-align: center;
+}
+
+.modal-body p {
+   margin: 10px;
+}
+
+.modal-footer button {
+   padding: 5px 15px;
+}
