@@ -3,7 +3,7 @@ import React from 'react'
 // Import react-bootstrap components
 import { Offcanvas, Button } from 'react-bootstrap'
 // Import CSS
-import '../css/HelpSidebar.css'
+import '../css/helpSidebar.css'
 
 // Instructions
 const instructions = [
