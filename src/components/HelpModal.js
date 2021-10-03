@@ -3,7 +3,7 @@ import React from 'react'
 // Import react-bootstrap components
 import { Offcanvas, Button } from 'react-bootstrap'
 // Import CSS
-import '../css/helpModal.css'
+import '../css/HelpSidebar.css'
 
 // Instructions
 const instructions = [
@@ -15,9 +15,9 @@ const instructions = [
    "When you find a pair they are removed from the board and when you find all the pairs in this memory, you have completed the game."
 ]
 
-const HelpModal = ({showHelpModal, handleClose}) => {
+const HelpSidebar = ({showHelpSidebar, handleClose}) => {
    return (
-      <Offcanvas show={showHelpModal} onHide={handleClose}>
+      <Offcanvas show={showHelpSidebar} onHide={handleClose}>
          <Offcanvas.Header closeButton>
             <Offcanvas.Title>Need some help?</Offcanvas.Title>
          </Offcanvas.Header>
@@ -30,28 +30,7 @@ const HelpModal = ({showHelpModal, handleClose}) => {
             </ul>
          </Offcanvas.Body>
       </Offcanvas>
-         // <Offcanvas
-         //    show={showHelpModal}
-         //    onHide={handleClose}
-         // >
-         //    <Offcanvas.Header>
-         //       <Offcanvas.Title>
-         //          Need some help?
-         //       </Offcanvas.Title>
-         //    </Offcanvas.Header>
-         //    <Offcanvas.Body>
-         //       <h5>Instructions</h5>
-         //       <ul>
-         //          {instructions.map((instruction, index) => (
-         //             <li key={index}>{instruction}</li>
-         //          ))}
-         //       </ul>
-         //    </Offcanvas.Body>
-         //    <Offcanvas.Footer>
-         //       <Button variant="secondary" onClick={handleClose}>Close</Button>
-         //    </Offcanvas.Footer>
-         // </Offcanvas>
    )
 }
 
-export default HelpModal
+export default HelpSidebar

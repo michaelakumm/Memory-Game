@@ -5,13 +5,13 @@ import { Button, OverlayTrigger, Tooltip } from 'react-bootstrap'
 // Import CSS
 import '../css/header.css'
 // Import component
-import HelpModal from './HelpModal'
+import HelpSidebar from './HelpSidebar'
 
 const Header = ({moves, bestScore, handleRestart}) => {
-   const [showHelpModal, setShowHelpModal] = useState(false);
+   const [showHelpSidebar, setShowHelpSidebar] = useState(false);
 
-   const handleClose = () => setShowHelpModal(false);
-   const handleShow = () => setShowHelpModal(true);
+   const handleClose = () => setShowHelpSidebar(false);
+   const handleShow = () => setShowHelpSidebar(true);
 
    return (
       <div className="header">
@@ -42,8 +42,8 @@ const Header = ({moves, bestScore, handleRestart}) => {
          >
             <Button variant="secondary" onClick={handleRestart}>Restart</Button>
          </OverlayTrigger>
-         <HelpModal 
-            showHelpModal={showHelpModal}
+         <HelpSidebar 
+            showHelpSidebar={showHelpSidebar}
             handleClose={handleClose}
          />
       </div>
