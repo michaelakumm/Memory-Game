@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# React JS Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](/public/Main.png)
+![](/public/FinishModal.png)
 
-## Available Scripts
+This project is a capstone for the Web Development Essentials track of the Full Stack Developer bootcamp I did.
 
-In the project directory, you can run:
+## The assignment
 
-### `npm start`
+> For this Capstone Project, you will be tasked to create a simple game using React. To be able to successfully do this, you will need to consolidate all the concepts you have learned about React, JSX and JavaScript so far.
+>
+> Create a React app that allows users to play Minesweeper. Minesweeper is a simple game where a user clicks on tiles to reveal whether there is a “mine” behind the tile or not. If a tile that hides a “mine” is clicked, the user loses and the game is over. If you are not familiar with Minesweeper, try it out [here](https://codepen.io/gaearon/pen/gWWZgR?editors=0010) .
+>
+> It is not compulsory that you create a Minesweeper game. Feel free to create another game (such as Suduko, Mahong, a memory game etc) of your choice. Tic-tac-toe is not a suitable choice!
+>
+> Any game that you create should meet the following criteria:
+> > 1. It should be created using Create React App.
+> > 2. It should include attractively styled components (at least 4 different types of components) that respond to user interaction. Feel free to use React-Bootstrap or another library and/or your own custom stylesheets.
+> > 3. A number of components should be rendered using the array.Map() method. Each component rendered in this way should have a key that uniquely identifies it (see Task: React II).
+> > 4. User interaction should modify the state of some components.
+> > 5. The state of two or more components should be synced.
+> > 6. The user should be able to restart the game.
+> > 7. The user should be clearly informed if they have “won” or “lost” the game.
+> > 8. The user should easily be able to request “help” that will inform the user about the rules of the game from the UI.
+> > 9. The UI should be attractive, easy to use and intuitive.
+> > 10. It should include a file called “readMe.md” which explains the rules of the game. This file should also provide clear instructions that an end user will be able to follow to be able to install and run your app on their local machine.
+> > 11. Your mentor should be able to launch your app by typing ‘npm start’ from the command line interface.
+> > 12. The file structure of the project should be well organized in line with guidelines [here](https://reactjs.org/docs/faq-structure.html) .
+> > 13. Your code should be well documented with appropriate comments. The code should also be easy to read adhering to [Google’s style guide](https://google.github.io/styleguide/jsguide.html) about indentation, meaningful variable and component names etc.
 
-Runs the app in the development mode.\
+## Running the Code
+
+Clone / Download the project to your computer.
+
+### Start the code
+Open command prompt / terminal for the project folder and then you can run:
+
+#### `npm install`
+
+This will install the node dependencies.
+
+#### `npm start`
+
+Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### How to play:
 
-### `npm test`
+On the game board, there are always two identical images.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the game by flipping a card.
 
-### `npm run build`
+Then try to find another card that has the same image as the first.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you can't find a pair, the flipped cards will be flipped back with the face down.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Try to remember these images as it becomes easier to find pairs the longer you play.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When you find a pair they are removed from the board and when you find all the pairs in this memory, you have completed the game.
 
-### `npm run eject`
+<br>
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***
+###### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
