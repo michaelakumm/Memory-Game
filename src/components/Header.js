@@ -34,7 +34,7 @@ const Header = ({moves, bestScore, handleRestart}) => {
          {/* Displays the player's highest score */}
          <div className="best-score">
             {/* Check if there is a best score in local storage, if yes then display best score, if no then display no record */}
-            Best Score: {localStorage.getItem("bestScore") ? (<span>{bestScore}</span>) : (<span>No Record</span>)}
+            Best Score: {localStorage.getItem("bestScore") ? (<span>{bestScore}</span>) : (<span>NR</span>)}
          </div>
          {/* Name of the game */}
          <div className="game-name">Test Your Memory</div>
