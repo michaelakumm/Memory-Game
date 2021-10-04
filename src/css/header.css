@@ -1,19 +1,32 @@
+/* Header */
 .header {
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 20px 40px;
-   margin: 20px 120px;
+   margin: 10px 0;
    box-shadow: 0 0 5px 5px #DEDEDE;
    border: 1px solid #DEDEDE;
    border-radius: 15px;
    background-color: white;
+   width: 80%;
+   max-width: 1100px;
+   font-size: 20px;
 }
 
 .header button {
-   padding: 5px 15px;
+   font-size: 18px;
+   width: 100px;
+   padding: 5px;
 }
 
+/* Best score */
+.best-score,
+.moves {
+   width: 130px;
+}
+
+/* Game title */
 .game-name {
    font-size: 28px;
    font-weight: 600;

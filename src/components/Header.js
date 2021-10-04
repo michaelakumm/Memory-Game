@@ -10,38 +10,51 @@ import HelpSidebar from './HelpSidebar'
 const Header = ({moves, bestScore, handleRestart}) => {
    const [showHelpSidebar, setShowHelpSidebar] = useState(false);
 
+   // Close sidebar
    const handleClose = () => setShowHelpSidebar(false);
+   // Open sidebar
    const handleShow = () => setShowHelpSidebar(true);
 
    return (
       <div className="header">
-         <OverlayTrigger 
-            overlay={
-               <Tooltip id="button-tooltip-1">
-                  Need some help?
-               </Tooltip>
-            } 
-            placement="bottom-start"
-         >
-            <Button variant="secondary" onClick={handleShow}>Help</Button>
-         </OverlayTrigger>
-         {localStorage.getItem("bestScore") && (
-            <div className="best-score">
-               Best Score: {bestScore}
-            </div>
-         )}
+         <div className="help-button">
+            {/* Overlay to give more info about the purpose of the button */}
+            <OverlayTrigger 
+               overlay={
+                  <Tooltip id="button-tooltip-1">
+                     Need some help?
+                  </Tooltip>
+               } 
+               placement="bottom-start"
+            >
+               {/* Show help sidebar */}
+               <Button variant="secondary" onClick={handleShow}>Help</Button>
+            </OverlayTrigger>
+         </div>
+         {/* Displays the player's highest score */}
+         <div className="best-score">
+            {/* Check if there is a best score in local storage, if yes then display best score, if no then display no record */}
+            Best Score: {localStorage.getItem("bestScore") ? (<span>{bestScore}</span>) : (<span>No Record</span>)}
+         </div>
+         {/* Name of the game */}
          <div className="game-name">Test Your Memory</div>
+         {/* Display number of moves */}
          <div className="moves">Moves: {moves}</div>
-         <OverlayTrigger
-            overlay={
-               <Tooltip id="button-tooltip-2">
-                  Want to start again?
-               </Tooltip>
-            } 
-            placement="bottom-end"
-         >
-            <Button variant="secondary" onClick={handleRestart}>Restart</Button>
-         </OverlayTrigger>
+         <div className="restart-button">
+            {/* Overlay to give more info about the purpose of the button */}
+            <OverlayTrigger
+               overlay={
+                  <Tooltip id="button-tooltip-2">
+                     Want to start again?
+                  </Tooltip>
+               } 
+               placement="bottom-end"
+            >
+               {/* Button to restart the game */}
+               <Button variant="secondary" onClick={handleRestart}>Restart</Button>
+            </OverlayTrigger>
+         </div>
+         {/* Sidebar will show when help button is clicked */}
          <HelpSidebar 
             showHelpSidebar={showHelpSidebar}
             handleClose={handleClose}

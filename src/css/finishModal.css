@@ -1,7 +1,4 @@
-* {
-   font-size: 20px;
-}
-
+/* Popup header */
 .modal-header,
 .modal-footer {
    justify-content: center;
@@ -19,7 +16,9 @@
    transform: scaleX(-1);
 }
 
+/* Popup body */
 .modal-body {
+   font-size: 20px;
    text-align: center;
 }
 
@@ -27,6 +26,8 @@
    margin: 10px;
 }
 
+/* Popup footer */
 .modal-footer button {
+   font-size: 18px;
    padding: 5px 15px;
 }

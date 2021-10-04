@@ -79,9 +79,12 @@ export default function Game() {
    // Check if all cards have been matched
    const checkCompletion = () => {
       if (Object.keys(clearedCards).length === uniqueCardsArray.length) {
+         // Show popup modal
          setShowFinishModal(true);
+         // Set highest score
          const highScore = Math.min(moves, bestScore);
          setBestScore(highScore);
+         // Save to local storage
          localStorage.setItem("bestScore", highScore);
       }
    };
@@ -90,6 +93,7 @@ export default function Game() {
    const evaluate = () => {
       const [first, second] = openCards;
       enable();
+      // If match then clear the two matching cards
       if (cards[first].type === cards[second].type) {
          setClearedCards((prev) => ({
             ...prev,
@@ -98,7 +102,7 @@ export default function Game() {
          setOpenCards([]);
          return;
       }
-      // This is to flip the cards back after 500ms duration
+      // Flip the cards back after 500ms if not match
       timeout.current = setTimeout(() => {
          setOpenCards([]);
       }, 500);
@@ -108,6 +112,7 @@ export default function Game() {
    const handleCardClick = (index) => {
       if (openCards.length === 1) {
          setOpenCards((prev) => [...prev, index]);
+         // Increase moves by one
          setMoves((moves) => moves + 1);
          disable();
       } else {
@@ -138,19 +143,22 @@ export default function Game() {
       return Boolean(clearedCards[card.type]);
    };
 
-   // Flip cards back over for another round
+   // Shuffle and reset cards for another round
    const handleRestart = () => {
       setClearedCards({});
       setOpenCards([]);
+      // Set finish modal
       setShowFinishModal(false);
+      // Set number of moves
       setMoves(0);
       setShouldDisableAllCards(false);
-      // set a shuffled deck of cards
+      // Set a shuffled deck of cards
       setCards(shuffleCards(uniqueCardsArray.concat(uniqueCardsArray)));
    };
 
    return ( 
       <div className="game">
+         {/* Header containing game information */}
          <Header 
             moves={moves}
             bestScore={bestScore}
@@ -172,6 +180,7 @@ export default function Game() {
                );
             })}
          </div>
+         {/* Popup when game is over */}
          <FinishModal
             showFinishModal={showFinishModal}
             handleRestart={handleRestart}

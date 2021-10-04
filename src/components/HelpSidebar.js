@@ -18,12 +18,15 @@ const instructions = [
 const HelpSidebar = ({showHelpSidebar, handleClose}) => {
    return (
       <Offcanvas show={showHelpSidebar} onHide={handleClose}>
+         {/* Header contains a button to close the sidebar */}
          <Offcanvas.Header closeButton>
+            {/* Title of the sidebar */}
             <Offcanvas.Title>Need some help?</Offcanvas.Title>
          </Offcanvas.Header>
          <Offcanvas.Body>
             <h5>Instructions</h5>
             <ul>
+               {/* Map instructions as a list */}
                {instructions.map((instruction, index) => (
                   <li key={index}>{instruction}</li>
                ))}
