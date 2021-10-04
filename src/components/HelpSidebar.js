@@ -12,7 +12,7 @@ const instructions = [
    "Then try to find another card that has the same image as the first.",
    "If you can't find a pair, the flipped cards will be flipped back with the face down.",
    "Try to remember these images as it becomes easier to find pairs the longer you play.",
-   "When you find a pair they are removed from the board and when you find all the pairs in this memory, you have completed the game."
+   "When you find a pair they are removed from the board and when you find all the pairs, you have completed the game."
 ]
 
 const HelpSidebar = ({showHelpSidebar, handleClose}) => {
