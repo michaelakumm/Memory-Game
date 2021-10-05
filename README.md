@@ -28,7 +28,7 @@ This is a capstone project for the Web Development with React and Express level 
 > 12. The file structure of the project should be well organized in line with guidelines [here](https://reactjs.org/docs/faq-structure.html) .
 > 13. Your code should be well documented with appropriate comments. The code should also be easy to read adhering to [Google’s style guide](https://google.github.io/styleguide/jsguide.html) about indentation, meaningful variable and component names etc.
 
-##Demo
+## Demo
 View the live demo [here](https://capstone-memory-game.herokuapp.com/).
 
 ## Running the Code
