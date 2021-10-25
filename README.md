@@ -29,7 +29,7 @@ This is a capstone project for the Web Development with React and Express level 
 > 13. Your code should be well documented with appropriate comments. The code should also be easy to read adhering to [Google’s style guide](https://google.github.io/styleguide/jsguide.html) about indentation, meaningful variable and component names etc.
 
 ## Demo
-View the live demo [here](https://capstone-memory-game.herokuapp.com/).
+View the live demo [here](https://michaelakumm-memory-game.herokuapp.com/).
 
 ## Running the Code
 
